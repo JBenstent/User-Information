@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>User Submission</title>
+    <link rel="stylesheet" type="text/css" href="users2.css">
+    <script type="text/javascript" src='http://code.jquery.com/jquery-1.10.2.min.js'></script>
+    <script type="text/javascript">
+     $(document).ready(function(){
+       $(document).on('click', 'button', function() {
+         $("#output").html(
+           "<b>" + "First Name: " + "</b>" +
+           "<b>" + $("#First_Name input").val() + "</b>" +
+
+           "<h3>" + "</h3>"+
+
+           "<b>" + "Last Name: " + "</b>" +
+           "<b>" + $("#Last_Name input").val() + "</b>" +
+
+           "<h3>" + "</h3>" +
+
+           "<b>" + "Email Address: " + "</b>" +
+           "<b>" + $('#Email_Address input').val() + "</b>" +
+
+           "<h3>" + "</h3>" +
+
+           "<b>" + "Contact Number: " + "</b>" +
+           "<b>" + $("#Contact_Number input").val() + "</b>"
+         )
+
+       });
+      });
+
+    </script>
+  </head>
+  <body>
+    <div id=container>
+
+      <div id="output">
+
+        <div id="firstitem">
+          <b>First name:</b>
+        </div>
+        <div id="seconditem">
+          <h3></h3>
+          <b>Last Name: </b>
+        </div>
+        <div id="thirditem">
+          <h3></h3>
+          <b>Email Address: </b>
+        </div>
+        <div id="fourthitem">
+          <h3></h3>
+          <b>Contact Number: </b>
+        </div>
+
+    </div>
+
+
+        <div id="input">
+
+          <div id="contentheader">
+            <h3>Add User</h3>
+          </div>
+
+          <div id="First_Name">
+            <p>First Name: </p>
+            <input type="text" name="first_name" placeholder="First Name">
+          </div>
+
+          <div id="Last_Name">
+            <p>Last Name:</p>
+            <input type="text" name="last_name" placeholder="Last Name">
+          </div>
+
+          <div id="Email_Address">
+            <p>Email Address:</p>
+            <input type="text" name="Email_Address" placeholder="Email Address">
+          </div>
+
+          <div id="Contact_Number">
+            <p>Contact Number:</p>
+            <input type="text" name="Contact_Number" placeholder="Contact Number">
+          </div>
+
+       </div>
+
+       <p></p>
+
+       <button>Add User</button>
+
+
+    </div>
+
+  </body>
+</html>
